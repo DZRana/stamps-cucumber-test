@@ -2,6 +2,7 @@ const path = require("path");
 
 const { config } = require("./wdio.conf.js");
 
+config.services = ['selenium-standalone'];
 config.capabilities = [
     {
         browserName: "chrome",
@@ -18,15 +19,6 @@ config.capabilities = [
     },
 ];
 
-config.port = 9516;
-config.services = [
-    [
-        "chromedriver",
-        {
-            chromeDriverArgs: ["--port=9516", "--url-base='/'"],
-        },
-    ],
-];
 config.path = "/";
 
 if (process.env.CI) {

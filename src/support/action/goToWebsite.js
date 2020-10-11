@@ -4,12 +4,5 @@
  */
 
 export default (page) => {
-
-  /**
-   * The URL to navigate to
-   * @type {String}
-   */
-  
-  const url =  page;
-  browser.url(url);
+  browser.url(page);
 };
