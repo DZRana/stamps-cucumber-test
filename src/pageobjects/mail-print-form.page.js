@@ -1,5 +1,6 @@
 /* TODO:
   - switch case exceptions
+  - if el exists
   - descriptions
   - cut down
   - driver
