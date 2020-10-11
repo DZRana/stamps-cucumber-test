@@ -1,7 +1,5 @@
 /**
  * Check if the given string is in the URL path
- * @param  {String}   falseCase       Whether to check if the given string is in
- *                                    the URL path or not
  * @param  {String}   expectedUrlPart The string to check for
  */
 export default (expectedUrlPart) => {

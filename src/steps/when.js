@@ -1,7 +1,7 @@
+import { When } from "cucumber";
+
 import goToWebsite from "../support/action/goToWebsite";
 import setInput from "../support/action/setInput";
-
-const { When } = require("cucumber");
 
 When(/^I go to "([^"]*)?"$/, goToWebsite);
 

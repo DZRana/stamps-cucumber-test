@@ -1,16 +1,11 @@
-/* TODO:
-  - switch case exceptions
-  - if el exists
-  - descriptions
-  - cut down
-  - driver
-*/
 import Page from "./Page";
 
 class MailPrintForm extends Page {
+
     /**
      * define elements
      */
+
     get printOnDropdown() {
         return $("#printmediadroplist-1038-inputEl");
     }
@@ -46,11 +41,11 @@ class MailPrintForm extends Page {
     }
 
     /**
-     * define or overwrite page methods
+     * page specific methods
      */
 
-    selectDropdownOption(element, opt) {
-        switch (element) {
+    selectDropdownOption(field, opt) {
+        switch (field) {
             case "Print On":
                 if (this.printOnDropdown.isClickable()) {
                     this.printOnDropdown.click();
@@ -98,8 +93,8 @@ class MailPrintForm extends Page {
         }
     }
 
-    enterText(element, input, oz) {
-        switch (element) {
+    enterText(field, input, oz) {
+        switch (field) {
             case "Serial Number":
                 if (this.serialNumberInput.isDisplayed()) {
                     this.serialNumberInput.clearValue();
